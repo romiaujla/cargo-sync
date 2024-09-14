@@ -31,12 +31,12 @@
     - [Load Scheduling & Capacity Planning](#load-scheduling--capacity-planning)
     - [Sustainability and Compliance](#sustainability-and-compliance)
 
-## 1. Load Overview
+## Load Overview
 - **One Table for Loads:** All loads are stored and managed in a single table.
 - **Multiple Pick-Up Locations:** A load can have multiple origins where cargo is picked up.
 - **Multiple Delivery Locations:** A load can also have multiple destinations for delivery.
 
-## 2. Load Stages
+## Load Stages
 
 ### Load Created / Scheduled
 - **Scenario:** The shipper schedules a load for pick-up.
@@ -90,7 +90,7 @@
 - **Scenario:** In case the load is canceled before pick-up or in transit.
 - **Details:** The system updates the load to reflect cancellation, and notifications are sent to all relevant parties.
 
-## 3. Additional Information
+## Additional Information
 
 ### Load Attributes
 - **Load ID**: A unique identifier for each load.
