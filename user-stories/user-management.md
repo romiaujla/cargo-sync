@@ -12,7 +12,7 @@
 9. [Warehouse Manager](#warehouse-manager)
 10. [Client/Customer (Optional)](#clientcustomer-optional)
 
-## 1. Administrator
+## Administrator
 - **Responsibilities:**
   - Full access to the entire application.
   - Manage all users, permissions, and roles.
@@ -20,7 +20,7 @@
   - Generate reports, configure workflows, and maintain the platform.
 - **Use Case:** Setting up new users, configuring settings, troubleshooting system issues.
 
-## 2. Shipper
+## Shipper
 - **Responsibilities:**
   - Create and manage load requests.
   - Track shipment progress and manage pick-up/delivery times.
@@ -28,7 +28,7 @@
   - View and download proof of delivery (POD) and other documentation.
 - **Use Case:** Scheduling shipments, monitoring in-transit loads, verifying delivery.
 
-## 3. Carrier/Logistics Manager
+## Carrier/Logistics Manager
 - **Responsibilities:**
   - Assign loads to drivers.
   - Manage fleet operations, including truck availability and driver assignments.
@@ -36,7 +36,7 @@
   - Communicate with shippers and update on shipment status.
 - **Use Case:** Overseeing all shipments, assigning tasks to drivers, communicating with clients.
 
-## 4. Driver
+## Driver
 - **Responsibilities:**
   - Receive and accept assigned loads.
   - Track pick-up and delivery times.
@@ -45,7 +45,7 @@
   - Report any issues (e.g., delays, breakdowns) in real-time.
 - **Use Case:** Executing pick-up and delivery, reporting progress, submitting POD.
 
-## 5. Dispatcher
+## Dispatcher
 - **Responsibilities:**
   - Coordinate real-time routing and scheduling for drivers.
   - Monitor load status, driver locations, and vehicle availability.
@@ -53,7 +53,7 @@
   - Act as a point of contact between shippers and drivers.
 - **Use Case:** Assigning new loads to drivers, resolving scheduling issues, coordinating urgent or high-priority shipments.
 
-## 6. Accountant/Billing Manager
+## Accountant/Billing Manager
 - **Responsibilities:**
   - Manage invoicing, payments, and financial records related to shipments.
   - Generate and process invoices for both shippers and carriers.
@@ -61,28 +61,28 @@
   - Monitor payment statuses and resolve discrepancies.
 - **Use Case:** Handling payments, generating financial reports, resolving billing disputes.
 
-## 7. Customer Support Representative
+## Customer Support Representative
 - **Responsibilities:**
   - Provide support to shippers, carriers, and drivers with any issues.
   - Resolve shipment delays, technical issues, or account inquiries.
   - Track and respond to customer queries regarding shipments.
 - **Use Case:** Answering questions, helping users navigate the system, resolving support tickets.
 
-## 8. Fleet Manager
+## Fleet Manager
 - **Responsibilities:**
   - Oversee vehicle maintenance and ensure trucks are operational.
   - Monitor fleet performance, fuel usage, and vehicle health.
   - Manage drivers’ schedules and routes for optimized efficiency.
 - **Use Case:** Managing the health and availability of trucks, ensuring compliance with safety regulations.
 
-## 9. Warehouse Manager
+## Warehouse Manager
 - **Responsibilities:**
   - Coordinate loading and unloading of cargo at warehouses.
   - Ensure inventory is loaded onto trucks for shipment on time.
   - Oversee storage of cargo and manage warehouse capacity.
 - **Use Case:** Tracking loading and unloading, managing storage, updating load status at the warehouse.
 
-## 10. Client/Customer (Optional)
+## Client/Customer (Optional)
 - **Responsibilities:**
   - Track their shipment’s status from pick-up to delivery.
   - Receive notifications and updates on shipment progress.
