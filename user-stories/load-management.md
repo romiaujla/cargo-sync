@@ -1,3 +1,5 @@
+[← Back to Readme](../readme.md)
+
 # Load Management in CargoSync
 
 ## Table of Contents

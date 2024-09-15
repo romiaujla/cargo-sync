@@ -1,3 +1,5 @@
+[← Back to Readme](../readme.md)
+
 # Trailer and Tractor Management
 
 This section covers the management of trailers and tractors in CargoSync, including their usage, maintenance, and assignment to loads.
