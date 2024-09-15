@@ -1,7 +1,15 @@
 # Additional Ideas
 
 ## Table of Contents
-1. [Compliance Management](#compliance-management)
+1. [Maintenance Management](#maintenance-management)
+2. [Load Planning and Optimization](#load-planning-and-optimization)
+3. [Mobile App for Drivers](#mobile-app-for-drivers)
+4. [Notification and Alerts](#notification-and-alerts)
+5. [Fuel Management](#fuel-management)
+6. [Geofencing and Location Tracking](#geofencing-and-location-tracking)
+7. [Document Management](#document-management)
+8. [Insurance and Claims Management](#insurance-and-claims-management)
+9. [Fleet Expansion Management](#fleet-expansion-management)
 
 ---
 
