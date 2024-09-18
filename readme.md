@@ -12,5 +12,8 @@ Welcome to the CargoSync project! Below are links to the key sections of the doc
 - [Accounts Management](./user-stories/accounts-management.md)
 - [Additional Ideas](./user-stories/additional-ideas.md)
 
+## Knowledge Base
+- [Developer](./knowledge-base/developer/readme.md)
+
 ### SQL DDL
 > [https://drawsql.app/teams/self-573/diagrams/transportationmanagement](https://drawsql.app/teams/self-573/diagrams/transportationmanagement)
