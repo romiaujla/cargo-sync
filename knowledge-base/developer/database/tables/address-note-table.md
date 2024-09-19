@@ -18,7 +18,6 @@
 |`updated_by`|ID of the user who last updated the record.|`integer`|❌|-1|
 |`deleted_at`|Timestamp when the record was deleted.|`timestamp`|✓|`null`|
 |`deleted_by`|ID of the user who deleted the record.|`integer`|✓|`null`|
-|&nbsp;|
 
 ## Constraints
 
