@@ -9,9 +9,10 @@
 |Column Name|Description|Data Type|Nullable|Default|
 |-|-|-|-|-|
 |`load_id`|Primary key|`integer`|❌||
-|`load_number`|Load number assigned by the broker|`varchar(255)`||❌||
+|`load_number`|Load number assigned by the broker|`varchar(255)`|❌||
 |`fk_broker_id`|Foreign key to the `broker` table|`integer`|❌||
 |`fk_user_id_dispatcher`|Foreign key to the `user` table, for the dispatcher that booked the load|`integer`|❌||
+|`fk_broker_contact_id`|Foreign key to the `broker_contact` table, contact of the person, from the brokers company dealing with the load|`integer`|❌||
 |&nbsp;|
 |`created_at`|Timestamp when the record was created.|`timestamp`|❌|`current_timestamp`|
 |`created_by`|ID of the user who created the record.|`integer`|❌|-1|
@@ -48,6 +49,8 @@ this will also contain info for the tractor and trailer assigned, and must have 
 |Constraint Name|Type|Description|Column(s)|
 |--|--|--|--|
 |`pk_load_id`|`primary key`|Primary key constraint|`load_id`|
+|`fk_broker_id`|`foreign key`|Foreign key constraint to the `broker` table|`fk_broker_id`|
+|`fk_user_id_dispatcher`|`foreign key`|Foreign key constraint to the `user` table|`fk_user_id_dispatcher`|
 
 ## Indexes
 
