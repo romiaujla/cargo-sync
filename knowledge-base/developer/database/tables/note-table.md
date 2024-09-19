@@ -36,4 +36,4 @@ None
 
 |Table Name|Relation (`note : user_note`)|
 |-|-|
-|[`user_note`]|One is to many|
+|[`user_note`](./user-note-table.md)|One is to many|

@@ -43,8 +43,12 @@
 
 |Index Name|Description|Column(s)|
 |-|-|-|
-
+|`idx_user_username`|Index on the username column for faster lookups|`username`|
+|`idx_user_email`|Index on the email column for faster lookups|`email`|
+|`idx_user_phone`|Index on the phone column for faster lookups|`phone`|
 
 ## Relationships
 
-None
+|Table Name|Relation (`user : user_note`)|
+|-|-|
+|[`user_note`](./user-note-table.md)|One is to many|

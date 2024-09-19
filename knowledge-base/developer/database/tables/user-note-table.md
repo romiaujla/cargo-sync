@@ -20,3 +20,21 @@ The `user_note` table stores notes associated with users. Each note is linked to
 |`deleted_at`|Timestamp when the record was deleted.|`timestamp`|✓|`null`|
 |`deleted_by`|ID of the user who deleted the record.|`integer`|✓|`null`|
 |&nbsp;|
+
+## Constraints
+
+|Constraint Name|Type|Description|Column(s)|
+|--|--|--|--|
+|`pk_user_note`|`primary key`|Primary key constraint|`user_note_id`|
+|`fk_user_note_user`|`foreign key`|Foreign key constraint linking to `user` table|`fk_user_id`|
+|`fk_user_note_note`|`foreign key`|Foreign key constraint linking to `note` table|`fk_note_id`|
+
+## Indexes
+
+## Relationships
+
+|Table Name|Relation (`user_note : note`)|
+|-|-|
+|[`note`](./note-table.md)|Many is to one|
+|[`user`](./user-table.md)|Many is to one|
+
