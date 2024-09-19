@@ -33,8 +33,9 @@ The `user_note` table stores notes associated with users. Each note is linked to
 
 ## Relationships
 
-|Table Name|Relation (`user_note : note`)|
+|Table Name|Relation*|
 |-|-|
 |[`note`](./note-table.md)|Many is to one|
 |[`user`](./user-table.md)|Many is to one|
 
+<span style="font-size:10px">\* Relational directions mentioned in the table above are from the current table to other table</span>

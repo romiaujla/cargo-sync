@@ -27,3 +27,16 @@ Represents the Role table in the database. The Role table is used to store infor
 |-|-|-|-|
 |`pk_role_id`|`primary key`|Primary key constraint|`role_id`|
 |`unique_role_name`|`unique`|Ensures that each role name is unique|`role_name`|
+
+## Indexes
+
+None
+
+## Relationships
+
+|Table Name|Relation*|
+|-|-|
+|[`user_role`](./user-role-table.md)|One is to many|
+
+
+<span style="font-size:10px">\* Relational directions mentioned in the table above are from the current table to other table</span>

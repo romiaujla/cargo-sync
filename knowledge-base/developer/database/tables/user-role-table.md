@@ -1,18 +1,17 @@
 [← Cargo Sync Documentation](../../../../readme.md) [← Developer Knowledge Base](../../readme.md) [← Database Table List](../database-design.md)
 
-# `note`
+# `user_role`
 
 ## Description
-The `note` table is designed to store all user-generated notes within the application. These notes can be associated with various resources, including users, loads, locations, and other entities. This table ensures that each note is uniquely identifiable and maintains comprehensive metadata about its creation, updates, and deletion. By linking notes to different resources, the application can provide a rich and interconnected user experience, facilitating better data organization and retrieval.
-
+The `user_role` table stores roles associated with users. Each role is linked to a specific user and contains information about the role's content, creation, and modification details. This table is useful for applications that need to keep track of user-specific roles or comments.
 
 ## Columns
 
 |Column Name|Description|Data Type|Nullable|Default|
 |-|-|-|-|-|
-|`note_id`|Primary key|`integer`|❌||
-|`content`|Content of the note|`text`|❌||
-|`pinned`|Indicates if the note is pinned|`boolean`|❌|`false`|
+|`user_role_id`|Primary key|`integer`|❌||
+|`fk_user_id`|Foreign key to the `user` table|`integer`|❌||
+|`fk_role_id`|Foreign key to the `role` table|`integer`|❌||
 |&nbsp;|
 |`created_at`|Timestamp when the record was created.|`timestamp`|❌|`current_timestamp`|
 |`created_by`|ID of the user who created the record.|`integer`|❌|-1|
@@ -26,16 +25,17 @@ The `note` table is designed to store all user-generated notes within the applic
 
 |Constraint Name|Type|Description|Column(s)|
 |--|--|--|--|
-|`pk_note_id`|`primary key`|Primary key constraint|`note_id`|
+|`pk_user_role`|`primary key`|Primary key constraint|`user_role_id`|
+|`fk_user_role_user`|`foreign key`|Foreign key constraint linking to `user` table|`fk_user_id`|
+|`fk_user_role_role`|`foreign key`|Foreign key constraint linking to `role` table|`fk_role_id`|
 
 ## Indexes
-
-None
 
 ## Relationships
 
 |Table Name|Relation*|
 |-|-|
-|[`user_note`](./user-note-table.md)|One is to many|
+|[`role`](./role-table.md)|Many is to one|
+|[`user`](./user-table.md)|Many is to one|
 
 <span style="font-size:10px">\* Relational directions mentioned in the table above are from the current table to other table</span>
