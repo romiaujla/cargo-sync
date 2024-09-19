@@ -1,6 +1,6 @@
 [← Cargo Sync Documentation](../../../readme.md) [← Developer Knowledge Base](../readme.md)
 
-# Database Naming Convention
+# Naming Convention
 
 ## General Conventions
 - Singular Table names
@@ -13,7 +13,7 @@
 - Descriptive Entity Names
     - Name tables based on the entity they represent: `company`, `user`, `load`.
 - Join Tables (For Many to Many relationships)
-    - For tables used to represent relationships between two entities, use both entity names, joined by an underscore, in alphabetical order.
+    - For tables used to represent relationships between two entities, use both entity names, joined by an underscore
     - E.g `load_user`, `company_user`, `equipment_load`
 
 ## Naming Convention for Columns
