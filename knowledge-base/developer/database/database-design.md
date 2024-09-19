@@ -7,6 +7,9 @@ Table of contents
 |Table Name|Description|
 |-|-|
 |[Company](#company)|A table that holds company information|
+|[Role](#role)|A table that holds information for all the roles that can use the application|
+|[User](#user)|A table that holds information for the user that will be using the application|
+
 
 ---
 
@@ -23,13 +26,22 @@ Table of contents
 |`dot_number`|Department of Transportation (DOT) Number, i.e. required for interstate commerce in the USA.|`integer`|✓||
 |`scac_code`|Standard Carrier Alpha Code (SCAC), it is a unique code for transportation companies.|`varchar(255)`|✓||
 |`ein`|Employer Identification Number, also called Tax identification number for businesses.|`varchar(255)`|❌|
-|[`type`](#type)| Sole Proprietorship, Partnership (GP, LP, or LLP), LLC, Inc., NPO, Co-op, Joint Venture, Trust, B-Corp, Low-Profit LLC, Close Corporation, Series LLC| `varchar(128)`|❌||
-|`phone`|Company phone number|`varchar(16)`|❌||
-|`email`|Company email|`varchar(32)`|❌||
-|`website`|Company website|`varchar(128)`|✓||
-|`primary_contact_first_name`||`varchar(128)`|||
+|[`type`](#company-type--type)| Company Type, e.g. Sole Proprietorship, Partnership (GP, LP, or LLP), LLC, etc.| `varchar(50)`|❌||
+|`phone`|Company phone number|`varchar(20)`|❌||
+|`email`|Company email|`varchar(255)`|❌||
+|`website`|Company website|`varchar(255)`|✓||
+|`primary_contact_first_name`|First name for the person that will be the main point of contact at the company.|`varchar(50)`|✓||
+|`primary_contact_last_name`|Last name for the person that will be the main point of contact at the company.|`varchar(50)`|✓||
+|`primary_contact_phone`|Phone number for the person that will be the main point of contact at the company.|`varchar(20)`|✓||
+|`primary_contact_email`|Email for the person that will be the main point of contact at the company.|`varchar(255)`|✓||
+|`address`|Company address field|`varchar(255)`|✓||
+|`address_2`|Company address line 2 field|`varchar(255)`|✓||
+|`city`|Company city field|`varchar(255)`|✓||
+|`state`|Company state field|`varchar(50)`|✓||
+|`zip`|Company zip field|`varchar(10)`|✓||
+|`country`|Company country field|`varchar(100)`|✓||
 
-#### Company Type
+#### Company Type | `type`
 
 1. Sole Proprietorship
     - A business owned and run by one individual. There is no legal distinction between the owner and the business.
@@ -59,3 +71,35 @@ Table of contents
     - A type of corporation with a small number of shareholders and less formal structure. These are often family-owned businesses.
 12. Series LLC
     - A unique form of LLC that allows for the creation of multiple “series” or sub-LLCs under one master LLC, often used for holding multiple assets or businesses under one umbrella.
+
+---
+
+### Role
+
+|Column Name|Description|Data Type|Nullable|Default|
+|-|-|-|-|-|
+|`role_id`|Primary key|`integer`|❌||
+|`role_name`|Name of the role|`varchar(255)`|❌||
+|`description`|Description of the role|`varchar(255)`|✓||
+
+---
+
+### User
+
+|Column Name|Description|Data Type|Nullable|Default|
+|-|-|-|-|-|
+|`user_id`|Primary key|`integer`|❌||
+|`username`|Unique username for the user|`varchar(255)`|❌||
+|`password_hash`|Hashed password for the user|`varchar(255)`|❌||
+|`email`|User's email address|`varchar(255)`|❌||
+|`first_name`|User's first name|`varchar(50)`|❌||
+|`middle_name`|User's middle name|`varchar(50)`|✓||
+|`last_name`|User's last name|`varchar(50)`|❌||
+|`nick_name`|User's nick name|`varchar(50)`|✓||
+|`phone`|User's phone number|`varchar(20)`|✓||
+|`address`|User's address|`varchar(255)`|✓||
+|`address_2`|User's address line 2|`varchar(255)`|✓||
+|`city`|User's city|`varchar(255)`|✓||
+|`state`|User's state|`varchar(50)`|✓||
+|`zip`|User's zip code|`varchar(10)`|✓||
+|`country`|User's country|`varchar(100)`|✓||
