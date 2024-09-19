@@ -14,3 +14,7 @@ This document provides detailed information about the tables and columns in the 
 |[`note`](./tables/note-table.md)|A table that holds notes information|
 |[`user_note`](./tables/user-note-table.md.md)|A junction table that establishes a many-to-many relationship between users and notes
 |[`user_role`](./tables/user-role-table.md)|A junction table that establishes a many-to-many relationship between users and roles|
+
+
+## Future additions
+- Ability to add `tags` to notes.

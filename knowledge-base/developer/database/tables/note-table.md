@@ -12,7 +12,8 @@ The `note` table is designed to store all user-generated notes within the applic
 |-|-|-|-|-|
 |`note_id`|Primary key|`integer`|❌||
 |`content`|Content of the note|`text`|❌||
-|`pinned`|Indicates if the note is pinned|`boolean`|❌|`false`|
+|`is_pinned`|Indicates if the note is pinned|`boolean`|❌|`false`|
+|`is_archived`|Indicates if the note is archived|`boolean`|❌|`false`|
 |&nbsp;|
 |`created_at`|Timestamp when the record was created.|`timestamp`|❌|`current_timestamp`|
 |`created_by`|ID of the user who created the record.|`integer`|❌|-1|
@@ -37,5 +38,6 @@ None
 |Table Name|Relation*|
 |-|-|
 |[`user_note`](./user-note-table.md)|One is to many|
+|[`address_note`](./address-note-table.md)|One is to many|
 
 <span style="font-size:10px">\* Relational directions mentioned in the table above are from the current table to other table</span>
