@@ -16,7 +16,7 @@ Represents the Company table in the database. The Company table stores informati
 |`dot_number`|Department of Transportation (DOT) Number, i.e. required for interstate commerce in the USA.|`integer`|✓|`null`|
 |`scac_code`|Standard Carrier Alpha Code (SCAC), it is a unique code for transportation companies.|`varchar(255)`|✓|`null`|
 |`ein`|Employer Identification Number, also called Tax identification number for businesses.|`varchar(255)`|❌|
-|[`type`](#company-type--type)| Company Type, e.g. Sole Proprietorship, Partnership (GP, LP, or LLP), LLC, etc.| `varchar(50)`|❌||
+|[`type`](#type)| Company Type, e.g. Sole Proprietorship, Partnership (GP, LP, or LLP), LLC, etc.| `varchar(50)`|❌||
 |`phone`|Company phone number|`varchar(20)`|❌||
 |`email`|Company email|`varchar(255)`|❌||
 |`website`|Company website|`varchar(255)`|✓|`null`|
