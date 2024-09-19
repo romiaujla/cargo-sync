@@ -3,7 +3,7 @@
 # `user_role`
 
 ## Description
-The `user_role` table stores roles associated with users. Each role is linked to a specific user and contains information about the role's content, creation, and modification details. This table is useful for applications that need to keep track of user-specific roles or comments.
+The `user_role` table manages the association between users and their roles within the application. Each entry in this table links a user to a specific role and includes metadata about the creation and modification of these associations. This structure is essential for scenarios where users need to operate under different roles, providing flexibility and control over user permissions and access levels.
 
 ## Columns
 
