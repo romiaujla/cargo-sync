@@ -12,4 +12,4 @@ This document provides detailed information about the tables and columns in the 
 |[`role`](./tables/role-table.md)|A table that holds role information|
 |[`user`](./tables/user-table.md)|A table that holds user information|
 |[`note`](./tables/note-table.md)|A table that holds notes information|
-|[`user_note`](./tables/user_note.md)|A junction table that establishes a many-to-many relationship between users and notes
+|[`user_note`](./tables/user-note-table.md.md)|A junction table that establishes a many-to-many relationship between users and notes
