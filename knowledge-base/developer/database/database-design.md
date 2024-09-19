@@ -14,6 +14,8 @@ This document provides detailed information about the tables and columns in the 
 |[`note`](./tables/note-table.md)|A table that holds notes information|
 |[`user_note`](./tables/user-note-table.md.md)|A junction table that establishes a many-to-many relationship between users and notes
 |[`user_role`](./tables/user-role-table.md)|A junction table that establishes a many-to-many relationship between users and roles|
+|[`address`](./tables/address-table.md)|A table that holds address information|
+|[`address_note`](./tables/address-note-table.md)|A junction table that establishes a many-to-many relationship between addresses and notes|
 
 
 ## Future additions
