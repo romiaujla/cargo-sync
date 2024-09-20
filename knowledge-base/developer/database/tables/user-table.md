@@ -2,6 +2,10 @@
 
 # `user`
 
+## Description
+
+Represents a `user` in the system. The `user` table stores all the information related to a user, including their unique identifier, name, email, and other relevant details. This table is  essential for managing user data and authentication within the application.
+
 ## Columns
 
 |Column Name|Description|Data Type|Nullable|Default|
