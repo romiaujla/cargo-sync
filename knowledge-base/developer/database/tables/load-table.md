@@ -3,6 +3,7 @@
 # `load`
 
 ## Description
+The `load` table contains information about a load being transported by the company.
 
 ## Columns
 
