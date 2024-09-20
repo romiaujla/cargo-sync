@@ -4,6 +4,8 @@
 
 ## Description
 
+The `load_stop` table is used to record the stops associated with a load in a logistics system. Each stop represents a point where a load is either picked up or dropped off. The table includes details such as the start and end timestamps of the stop, the type of stop (pick-up or drop-off), and references to other related tables like `load` and `address`. It also supports self-referencing to create a chain of stops.
+
 ## Columns
 
 |Column Name|Description|Data Type|Nullable|Default|
@@ -14,7 +16,7 @@
 |`fk_load_stop_id_previous`|Self referencing foreign key to the `load_stop` table, this will be user to create a chain of stops|`integer`|✓|`null`|
 |`start_at`|Timestamp when the stop starts.|`timestamp`|❌|`null`|
 |`end_at`|Timestamp when the stop ends.|`timestamp`|❌|`null`|
-|`type`|Type of the load whether a Pick Up or Drop Off|`varchar(15)`|❌|`Pick Up`|
+|[`type`](#type)|Type of the load whether a Pick Up or Drop Off|`varchar(15)`|❌|`Pick Up`|
 |&nbsp;|
 |`created_at`|Timestamp when the record was created.|`timestamp`|❌|`current_timestamp`|
 |`created_by`|ID of the user who created the record.|`integer`|❌|-1|

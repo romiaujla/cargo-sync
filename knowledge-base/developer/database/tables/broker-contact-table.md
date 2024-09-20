@@ -25,7 +25,7 @@ This table represents a collection of users and their associated details. It inc
 |`state`|State of the broker contact.|`varchar`|✓|`null`|
 |`zip`|ZIP code of the broker contact.|`varchar`|✓|`null`|
 |`country`|Country of the broker contact.|`varchar`|✓|`null`|
-|`designation`|Designation of the broker contact.|`varchar`|✓|`null`|
+|[`designation`](#designation)|Designation of the broker contact.|`varchar`|✓|`null`|
 |&nbsp;|
 |`created_at`|Timestamp when the record was created.|`timestamp`|❌|`current_timestamp`|
 |`created_by`|ID of the user who created the record.|`integer`|❌|-1|

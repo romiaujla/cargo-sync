@@ -4,6 +4,8 @@
 
 ## Description
 
+The `broker_note` table is used to store notes associated with brokers. Each entry in this table links a broker to a specific note, allowing for detailed record-keeping and tracking of broker-related information. This table ensures that each note can be uniquely identified and associated with a broker, facilitating efficient data management and retrieval.
+
 ## Columns
 
 |Column Name|Description|Data Type|Nullable|Default|
@@ -24,8 +26,8 @@
 |Constraint Name|Type|Description|Column(s)|
 |--|--|--|--|
 |`pk_broker_note_id`|`primary key`|Primary key constraint|`broker_note_id`|
-|`fk_broker_note_user`|`foreign key`|Foreign key constraint linking to `broker` table|`fk_broker_id`|
-|`fk_broker_note_note`|`foreign key`|Foreign key constraint linking to `note` table|`fk_note_id`|
+|`fk_broker_note_broker_id`|`foreign key`|Foreign key constraint linking to `broker` table|`fk_broker_id`|
+|`fk_broker_note_note_id`|`foreign key`|Foreign key constraint linking to `note` table|`fk_note_id`|
 
 ## Indexes
 

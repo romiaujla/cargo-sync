@@ -4,6 +4,8 @@
 
 ## Description
 
+The `file` table stores metadata about various files associated with loads, companies, and brokers. It includes information such as file type, subtype, visibility, and timestamps for creation, updates, and deletions. This table helps in organizing and managing files efficiently within the system.
+
 ## Columns
 
 |Column Name|Description|Data Type|Nullable|Default|
