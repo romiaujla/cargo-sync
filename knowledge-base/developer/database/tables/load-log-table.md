@@ -11,6 +11,9 @@
 |`load_log_id`|Primary key|`integer`|❌||
 |`fk_load_id`|Foreign key to the `load` table|`integer`|❌||
 |[`status`](#status)|Status of the load|`varchar(100)`|❌||
+|`fk_load_stop_id`|Foreign key to the `load` table. This will be required when the status is `At Pick Up`, `Loading`, `At Drop Off` and `Unloading`|`integer`|✓|`null`|
+|`start_at`|Timestamp when the load started.|`timestamp`|❌|`null`|
+|`end_at`|Timestamp when the load ended.|`timestamp`|❌|`null`|
 |&nbsp;|
 |`created_at`|Timestamp when the record was created.|`timestamp`|❌|`current_timestamp`|
 |`created_by`|ID of the user who created the record.|`integer`|❌|-1|
@@ -34,9 +37,24 @@
 |`Loading`|The cargo is being loaded onto the truck.|
 |`In Transit`|The truck is on the way to the delivery location.|
 |`Resting`|The driver is taking a mandatory rest break.|
+|`Pre-Trip`|The driver is performing a pre-trip inspection of the truck and cargo.|
+|`Inspection`|The truck and cargo are being inspected, usually by a regulatory authority.|
+|`Fuel Stop`|The truck is stopping for refueling.|
+|`Breakdown`|The truck has encountered a mechanical issue and is unable to continue.|
+|`Driver Reassignment`|The current driver is being replaced with another driver.|
+|`Tractor Reassignment`|The current tractor is being replaced with another tractor.|
+|`Trailer Reassignment`|The current trailer is being replaced with another trailer.|
 |`At Drop Off`|The driver has arrived at the delivery location and is ready to unload the cargo.|
 |`Unloading`|The cargo is being unloaded from the truck.|
 |`Complete`|The delivery has been completed successfully.|
+|`Delayed`|The load is delayed due to unforeseen circumstances.|
+|`Cancelled`|The load has been cancelled and will not be delivered.|
+|`Rescheduled`|The delivery has been rescheduled to a different time or date.|
+|`Customs Hold`|The load is on hold due to customs clearance issues.|
+|`Weather Delay`|The load is delayed due to adverse weather conditions.|
+|`Accident`|The truck has been involved in an accident.|
+|`Maintenance`|The truck is undergoing maintenance.|
+|`Load Rejected`|The load has been rejected by the receiver.|
 
 ## Constraints
 
@@ -54,7 +72,8 @@
 
 |Table Name|Relation*|
 |-|-|
-|[`load_log_note`](./link.md)|One is to many|
+|[`load_stop`](./load-stop-table.md)|Many is to One|
+|[`load`](./load-table.md)|Many is to One|
 
 
 <span style="font-size:10px">\* Relational directions mentioned in the table above are from the current table to other table</span>
