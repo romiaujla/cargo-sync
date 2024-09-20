@@ -63,7 +63,7 @@ This table represents a collection of users and their associated details. It inc
 |Table Name|Relation*|
 |-|-|
 |[`broker`](./broker-table.md)|Many to one|
-|[`load_broker_contact`](./load_broker_contact-table.md)|One to many|
+|[`load_broker_contact`](./load-broker-contact-table.md)|Many to Many|
 
 
 
