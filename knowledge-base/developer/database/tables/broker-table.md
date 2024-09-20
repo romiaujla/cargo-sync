@@ -6,6 +6,7 @@
 
 The `broker` table contains information about brokers who are responsible for assigning loads to trucking companies. Brokers act as intermediaries between shippers and carriers, ensuring that goods are transported efficiently and effectively. This table stores essential details about each broker, including their identification numbers, contact information, and business credentials. The information in this table is crucial for managing relationships with brokers and ensuring compliance with regulatory requirements.
 
+
 ## Columns
 
 |Column Name|Description|Data Type|Nullable|Default|
