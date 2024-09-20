@@ -4,6 +4,8 @@
 
 ## Description
 
+The `address_note` table is a junction table that establishes a many-to-many relationship between the `address` and `note` tables. Each record in this table represents a link between a specific address and a specific note.
+
 ## Columns
 
 |Column Name|Description|Data Type|Nullable|Default|
@@ -24,8 +26,8 @@
 |Constraint Name|Type|Description|Column(s)|
 |--|--|--|--|
 |`pk_address_note_id`|`primary key`|Primary key constraint|`address_note_id`|
-|`fk_address_note_user`|`foreign key`|Foreign key constraint linking to `address` table|`fk_address_id`|
-|`fk_address_note_note`|`foreign key`|Foreign key constraint linking to `note` table|`fk_note_id`|
+|`fk_address_note_address_id`|`foreign key`|Foreign key constraint linking to `address` table|`fk_address_id`|
+|`fk_address_note_note_id`|`foreign key`|Foreign key constraint linking to `note` table|`fk_note_id`|
 
 ## Indexes
 
