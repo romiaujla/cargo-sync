@@ -4,6 +4,8 @@
 
 ## Description
 
+The `load_log` table is designed to maintain the different stages a load goes through from start to finish. It provides a historical record of the load's status changes, capturing key events and timestamps. This information is crucial for tracking the progress of a load, identifying delays, and ensuring transparency in the load management process.
+
 ## Columns
 
 |Column Name|Description|Data Type|Nullable|Default|
@@ -61,12 +63,14 @@
 |Constraint Name|Type|Description|Column(s)|
 |--|--|--|--|
 |`pk_load_log_id`|`primary key`|Primary key constraint|`load_log_id`|
+|`fk_load_log_load_id`|`foreign key`|Foreign key constraint|`fk_load_id`|
+|`fk_load_log_load_stop_id`|`foreign key`|Foreign key constraint|`fk_load_stop_id`|
 
 ## Indexes
 
 |Index Name|Description|Column(s)|
 |-|-|-|
-|`idx_load_log_username`|Index description|`username`|
+|None|
 
 ## Relationships
 

@@ -4,6 +4,8 @@
 
 ## Description
 
+The `load_note` table stores information related to notes associated with loads.
+
 ## Columns
 
 |Column Name|Description|Data Type|Nullable|Default|
@@ -24,8 +26,8 @@
 |Constraint Name|Type|Description|Column(s)|
 |--|--|--|--|
 |`pk_load_note_id`|`primary key`|Primary key constraint|`load_note_id`|
-|`fk_load_note_load`|`foreign key`|Foreign key constraint linking to `load` table|`fk_load_id`|
-|`fk_load_note_note`|`foreign key`|Foreign key constraint linking to `note` table|`fk_note_id`|
+|`fk_load_note_load_id`|`foreign key`|Foreign key constraint linking to `load` table|`fk_load_id`|
+|`fk_load_note_note_id`|`foreign key`|Foreign key constraint linking to `note` table|`fk_note_id`|
 
 ## Indexes
 
