@@ -1,4 +1,6 @@
-# Database Naming Convention
+[← Cargo Sync Documentation](../../../readme.md) [← Developer Knowledge Base](../readme.md)
+
+# Naming Convention
 
 ## General Conventions
 - Singular Table names
@@ -6,14 +8,12 @@
 - Lowercase names with underscores (Snake Case)
     - Use lowercase letters and separate words with underscores: `company_name`, `company_address`.
     - This format is readable and widely supported across databases like PostgreSQL.
-- Descriptive and Meaningful names
-    - Be explicit. A field named `name` should be more specific, e.g. `first_name`, `last_name`, `company_name`.
 
 ## Naming Conventions for Tables
 - Descriptive Entity Names
     - Name tables based on the entity they represent: `company`, `user`, `load`.
 - Join Tables (For Many to Many relationships)
-    - For tables used to represent relationships between two entities, use both entity names, joined by an underscore, in alphabetical order.
+    - For tables used to represent relationships between two entities, use both entity names, joined by an underscore
     - E.g `load_user`, `company_user`, `equipment_load`
 
 ## Naming Convention for Columns
@@ -41,8 +41,8 @@
     - Use `uq_{table}_{column}`
     - E.g. `uq_user_email`
 - Check Constraints
-    - Use `ck_{table}_{column}`
-    - E.g. `ck_user_age`
+    - Use `chk_{table}_{column}`
+    - E.g. `chk_user_age`
 
 ## Naming Conventions for Procedures and Functions
 - Use Verb-Noun Pattern
