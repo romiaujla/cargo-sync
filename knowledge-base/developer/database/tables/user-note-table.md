@@ -25,8 +25,8 @@ The `user_note` table stores notes associated with users. Each note is linked to
 |Constraint Name|Type|Description|Column(s)|
 |--|--|--|--|
 |`pk_user_note`|`primary key`|Primary key constraint|`user_note_id`|
-|`fk_user_note_user`|`foreign key`|Foreign key constraint linking to `user` table|`fk_user_id`|
-|`fk_user_note_note`|`foreign key`|Foreign key constraint linking to `note` table|`fk_note_id`|
+|`fk_user_note_user_id`|`foreign key`|Foreign key constraint linking to `user` table|`fk_user_id`|
+|`fk_user_note_note_id`|`foreign key`|Foreign key constraint linking to `note` table|`fk_note_id`|
 
 
 ## Indexes
