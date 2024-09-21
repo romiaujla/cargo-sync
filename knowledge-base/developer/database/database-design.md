@@ -22,11 +22,17 @@ This document provides detailed information about the tables and columns in the 
 |[`load`](./tables/load-table.md)|A table that holds load information|
 |[`note`](./tables/note-table.md)|A table that holds notes information|
 |[`role`](./tables/role-table.md)|A table that holds role information|
+|[`service_center_contact`](./tables/service-center-contact-table.md)|A table that holds service center contact information|
+|[`service_center_note`](./tables/service-center-note-table.md)|A junction table that establishes a many-to-many relationship between service centers and notes|
+|[`service_center_specialty`](./tables/service-center-specialty-table.md)|A table that holds service center specialty information|
+|[`service_center`](./tables/service-center-table.md)|A table that holds service center information|
 |[`tractor_file`](./tables/tractor-file-table.md)|A table that holds tractor file information|
 |[`tractor_note`](./tables/tractor-note-table.md)|A junction table that establishes a many-to-many relationship between tractors and notes|
+|[`tractor_service_log`](./tables/tractor-service-log-table.md)|A table that holds tractor service log information|
 |[`tractor`](./tables/tractor-table.md)|A table that holds tractor information|
 |[`trailer_file`](./tables/trailer-file-table.md)|A table that holds trailer file information|
 |[`trailer_note`](./tables/trailer-note-table.md)|A junction table that establishes a many-to-many relationship between trailers and notes|
+|[`trailer_service_log`](./tables/trailer-service-log-table.md)|A table that holds trailer service log information|
 |[`trailer`](./tables/trailer-table.md)|A table that holds trailer information|
 |[`user_note`](./tables/user-note-table.md.md)|A junction table that establishes a many-to-many relationship between users and notes
 |[`user_role`](./tables/user-role-table.md)|A junction table that establishes a many-to-many relationship between users and roles|

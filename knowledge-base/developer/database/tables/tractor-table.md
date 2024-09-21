@@ -78,6 +78,7 @@ The `tractor` table stores detailed information about each tractor in the fleet.
 |[`load_log`](./load-log-table.md)|One is to many|
 |[`tractor_file`](./tractor-file-table.md)|One is to many|
 |[`tractor_note`](./tractor-note-table.md)|One is to many|
+|[`tractor_service_log`](./tractor-service-log-table.md)|One is to many|
 
 
 
