@@ -11,6 +11,9 @@ The `file` table stores metadata about various files associated with loads, comp
 |Column Name|Description|Data Type|Nullable|Default|
 |-|-|-|-|-|
 |`file_id`|Primary key|`integer`|❌||
+|`key`|Unique key for the file|`varchar(255)`|❌||
+|`mimetype`|MIME type of the file|`varchar(100)`|❌||
+|`name`|Name of the file|`varchar(255)`|❌||
 |`description`|Description for the file|`text`|✓|`null`|
 |[`type`](#type)|Type of the file|`varchar(100)`|❌||
 |[`sub_type`](#sub_type)|Sub Type of the file|`varchar(100)`|❌||

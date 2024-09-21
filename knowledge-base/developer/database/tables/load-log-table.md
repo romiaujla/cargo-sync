@@ -10,12 +10,15 @@ The `load_log` table is designed to maintain the different stages a load goes th
 
 |Column Name|Description|Data Type|Nullable|Default|
 |-|-|-|-|-|
-|`load_log_id`|Primary key|`integer`|❌||
-|`fk_load_id`|Foreign key to the `load` table|`integer`|❌||
-|[`status`](#status)|Status of the load|`varchar(100)`|❌||
+|`load_log_id`|Primary key|`integer`|❌|`null`|
+|`fk_load_id`|Foreign key to the `load` table|`integer`|❌|`null`|
+|[`status`](#status)|Status of the load|`varchar(100)`|❌|`null`|
 |`fk_load_stop_id`|Foreign key to the `load` table. This will be required when the status is `At Pick Up`, `Loading`, `At Drop Off` and `Unloading`|`integer`|✓|`null`|
 |`start_at`|Timestamp when the load started.|`timestamp`|❌|`null`|
 |`end_at`|Timestamp when the load ended.|`timestamp`|❌|`null`|
+|`fk_user_id_driver`|The driver assigned to the load|`integer`|✓||
+|`fk_tractor_id`|Foreign key to the `tractor` table|`integer`|✓|`null`|
+|`fk_trailer_id`|Foreign key to the `trailer` table|`integer`|✓|`null`|
 |&nbsp;|
 |`created_at`|Timestamp when the record was created.|`timestamp`|❌|`current_timestamp`|
 |`created_by`|ID of the user who created the record.|`integer`|❌|-1|
@@ -65,6 +68,9 @@ The `load_log` table is designed to maintain the different stages a load goes th
 |`pk_load_log_id`|`primary key`|Primary key constraint|`load_log_id`|
 |`fk_load_log_load_id`|`foreign key`|Foreign key constraint|`fk_load_id`|
 |`fk_load_log_load_stop_id`|`foreign key`|Foreign key constraint|`fk_load_stop_id`|
+|`fk_load_log_user_id_driver`|`foreign key`|Foreign key constraint|`fk_user_id_driver`|
+|`fk_load_log_tractor_id`|`foreign key`|Foreign key constraint|`fk_tractor_id`|
+|`fk_load_log_trailer_id`|`foreign key`|Foreign key constraint|`fk_trailer_id`|
 
 ## Indexes
 
@@ -78,6 +84,9 @@ The `load_log` table is designed to maintain the different stages a load goes th
 |-|-|
 |[`load_stop`](./load-stop-table.md)|Many is to One|
 |[`load`](./load-table.md)|Many is to One|
+|[`user`](./user-table.md)|Many is to One|
+|[`tractor`](./tractor-table.md)|Many is to One|
+|[`trailer`](./trailer-table.md)|Many is to One|
 
 
 <span style="font-size:10px">\* Relational directions mentioned in the table above are from the current table to other table</span>
