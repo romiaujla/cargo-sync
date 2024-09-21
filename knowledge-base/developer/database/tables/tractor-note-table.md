@@ -1,17 +1,17 @@
 [← Cargo Sync Documentation](../../../../readme.md) [← Developer Knowledge Base](../../readme.md) [← Database Table List](../database-design.md)
 
-# `{table}_note`
+# `tractor_note`
 
 ## Description
 
-The `{table}_note` table serves as a junction table linking {table}s and notes. It stores metadata about the associations between {table}s and various notes, including timestamps for creation, updates, and deletions. This table helps in organizing and managing the relationships between {table}s and their associated notes efficiently within the system.
+The `tractor_note` table serves as a junction table linking tractors and notes. It stores metadata about the associations between tractors and various notes, including timestamps for creation, updates, and deletions. This table helps in organizing and managing the relationships between tractors and their associated notes efficiently within the system.
 
 ## Columns
 
 |Column Name|Description|Data Type|Nullable|Default|
 |-|-|-|-|-|
-|`{table}_note_id`|Primary key|`integer`|❌||
-|`fk_{table}_id`|Foreign key to the `{table}` table|`integer`|❌||
+|`tractor_note_id`|Primary key|`integer`|❌||
+|`fk_tractor_id`|Foreign key to the `tractor` table|`integer`|❌||
 |`fk_note_id`|Foreign key to the `note` table|`integer`|❌||
 |&nbsp;|
 |`created_at`|Timestamp when the record was created.|`timestamp`|❌|`current_timestamp`|
@@ -25,9 +25,9 @@ The `{table}_note` table serves as a junction table linking {table}s and notes. 
 
 |Constraint Name|Type|Description|Column(s)|
 |--|--|--|--|
-|`pk_{table}_note_id`|`primary key`|Primary key constraint|`{table}_note_id`|
-|`fk_{table}_note_user`|`foreign key`|Foreign key constraint linking to `{table}` table|`fk_{table}_id`|
-|`fk_{table}_note_note`|`foreign key`|Foreign key constraint linking to `note` table|`fk_note_id`|
+|`pk_tractor_note_id`|`primary key`|Primary key constraint|`tractor_note_id`|
+|`fk_tractor_note_user`|`foreign key`|Foreign key constraint linking to `tractor` table|`fk_tractor_id`|
+|`fk_tractor_note_note`|`foreign key`|Foreign key constraint linking to `note` table|`fk_note_id`|
 
 ## Indexes
 
@@ -39,7 +39,7 @@ The `{table}_note` table serves as a junction table linking {table}s and notes. 
 
 |Table Name|Relation*|
 |-|-|
-|[`{table}`](./{table}-table.md)|Many is to one|
+|[`tractor`](./tractor-table.md)|Many is to one|
 |[`note`](./note-table.md)|Many is to one|
 
 

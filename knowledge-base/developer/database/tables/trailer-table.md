@@ -57,7 +57,6 @@ The `trailer` table stores information about trailers used in logistics and tran
 |-|-|
 |[`load_log`](./load-log-table.md)|One is to many|
 |[`trailer_file`](./trailer-file-table.md)|One is to many|
-
-
+|[`trailer_note`](./trailer-note-table.md)|One is to many|
 
 <span style="font-size:10px">\* Relational directions mentioned in the table above are from the current table to other table</span>
