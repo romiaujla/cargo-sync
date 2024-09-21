@@ -19,12 +19,17 @@ The `tractor` table stores detailed information about each tractor in the fleet.
 |`year`|Year of manufacture.|`integer`|❌||
 |`purchase_date`|Date when the tractor was purchased.|`date`|❌||
 |`purchase_mileage`|Mileage at the time of purchase.|`integer`|❌|`0`|
-|`license_plate`|License plate number.|`varchar(20)`|❌||
-|`registered_state`|State where the tractor is registered.|`varchar(50)`|❌||
-|`color`|Color of the tractor.|`varchar(30)`|❌||
-|`engine_type`|Type of engine used in the tractor.|`varchar(50)`|❌||
+|`license_plate`|License plate number.|`varchar(20)`|✓|`null`|
+|`registered_state`|State where the tractor is registered.|`varchar(50)`|✓|`null`|
+|`color`|Color of the tractor.|`varchar(30)`|✓|`null`|
+|`engine_type`|Type of engine used in the tractor.|`varchar(50)`|✓|`null`|
 |`horsepower`|Horsepower of the tractor.|`integer`|❌||
 |`mileage`|Mileage of the tractor.|`integer`|❌|`0`|
+|[`type`](#type)|Type of the tractor.|`varchar(50)`|✓|`null`|
+|`weight`|Weight of the tractor.|`integer`|✓|`null`|
+|`axle_count`|Number of axles on the tractor.|`integer`|✓|`null`|
+|`sleeps`|Number of sleeping berths in the tractor.|`integer`|✓|`null`|
+|`passenger_capacity`|Maximum number of passengers the tractor can accommodate.|`integer`|✓|`null`|
 |`last_service_date`|Date of the last service.|`date`|✓|`null`|
 |`last_service_mileage`|Mileage at the time of the last service.|`integer`|✓|`null`|
 |`next_service_date`|Date of the next scheduled service.|`date`|✓|`null`|
@@ -43,6 +48,16 @@ The `tractor` table stores detailed information about each tractor in the fleet.
 |`updated_by`|ID of the user who last updated the record.|`integer`|❌|-1|
 |`deleted_at`|Timestamp when the record was deleted.|`timestamp`|✓|`null`|
 |`deleted_by`|ID of the user who deleted the record.|`integer`|✓|`null`|
+
+## Enums
+
+### `type`
+
+|Value|Description|
+|-|-|
+|`Day Cab`|Semi-truck tractor without a sleeping compartment, used for short hauls.|
+|`Sleeper Cab`|Semi-truck tractor with a sleeping compartment, used for long hauls.|
+|`Heavy Haul`|Semi-truck tractor used for transporting oversized or overweight loads.|
 
 ## Constraints
 
