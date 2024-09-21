@@ -22,6 +22,12 @@ This document provides detailed information about the tables and columns in the 
 |[`load`](./tables/load-table.md)|A table that holds load information|
 |[`note`](./tables/note-table.md)|A table that holds notes information|
 |[`role`](./tables/role-table.md)|A table that holds role information|
+|[`tractor_file`](./tables/tractor-file-table.md)|A table that holds tractor file information|
+|[`tractor_note`](./tables/tractor-note-table.md)|A junction table that establishes a many-to-many relationship between tractors and notes|
+|[`tractor`](./tables/tractor-table.md)|A table that holds tractor information|
+|[`trailer_file`](./tables/trailer-file-table.md)|A table that holds trailer file information|
+|[`trailer_note`](./tables/trailer-note-table.md)|A junction table that establishes a many-to-many relationship between trailers and notes|
+|[`trailer`](./tables/trailer-table.md)|A table that holds trailer information|
 |[`user_note`](./tables/user-note-table.md.md)|A junction table that establishes a many-to-many relationship between users and notes
 |[`user_role`](./tables/user-role-table.md)|A junction table that establishes a many-to-many relationship between users and roles|
 |[`user`](./tables/user-table.md)|A table that holds user information|
