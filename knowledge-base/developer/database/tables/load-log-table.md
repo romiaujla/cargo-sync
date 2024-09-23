@@ -11,12 +11,12 @@ The `load_log` table is designed to maintain the different stages a load goes th
 |Column Name|Description|Data Type|Nullable|Default|
 |-|-|-|-|-|
 |`load_log_id`|Primary key|`integer`|❌|`null`|
-|`fk_load_id`|Foreign key to the `load` table|`integer`|❌|`null`|
-|[`status`](#status)|Status of the load|`varchar(100)`|❌|`null`|
+|`fk_load_id`|Foreign key to the `load` table|`integer`|❌||
+|[`status`](#status)|Status of the load|`varchar(100)`|❌||
 |`fk_load_stop_id`|Foreign key to the `load` table. This will be required when the status is `At Pick Up`, `Loading`, `At Drop Off` and `Unloading`|`integer`|✓|`null`|
-|`start_at`|Timestamp when the load started.|`timestamp`|❌|`null`|
-|`end_at`|Timestamp when the load ended.|`timestamp`|❌|`null`|
-|`fk_user_id_driver`|The driver assigned to the load|`integer`|✓||
+|`start_at`|Timestamp when the load started.|`timestamp`|❌||
+|`end_at`|Timestamp when the load ended.|`timestamp`|✓|`null`|
+|`fk_user_id_driver`|The driver assigned to the load|`integer`|❌||
 |`fk_tractor_id`|Foreign key to the `tractor` table|`integer`|✓|`null`|
 |`fk_trailer_id`|Foreign key to the `trailer` table|`integer`|✓|`null`|
 |&nbsp;|

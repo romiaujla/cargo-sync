@@ -35,7 +35,7 @@ The `service_center` table stores information about various service centers. Eac
 
 |Index Name|Description|Column(s)|
 |-|-|-|
-|`idx_service_center_username`|Index description|`username`|
+|None|
 
 ## Relationships
 
