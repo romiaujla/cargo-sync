@@ -56,5 +56,6 @@ The `broker` table contains information about brokers who are responsible for as
 |[`broker_note`](./broker-note-table.md)|One is to Many|
 |[`load`](./load-table.md)|One is to Many|
 |[`broker_contact`](./broker-contact-table.md)|One is to Many|
+|[`invoice`](./invoice-table.md)|One is to Many|
 
 <span style="font-size:10px">\* Relational directions mentioned in the table above are from the current table to other table</span>

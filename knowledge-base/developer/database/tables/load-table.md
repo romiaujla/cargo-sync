@@ -14,6 +14,10 @@ The `load` table contains information about a load being transported by the comp
 |`fk_broker_id`|Foreign key to the `broker` table|`integer`|❌||
 |`fk_user_id_dispatcher`|Foreign key to the `user` table, for the dispatcher that booked the load|`integer`|❌||
 |`fk_load_broker_contact_id`|Foreign key to the `load_broker_contact` table, contact of the people to reach out to incase of conducting business with the broker who provided the load|`integer`|❌||
+|`total_distance`|Total distance of the load|`decimal(10,2)`|❌||
+|`distance_unit`|Unit of distance (e.g., miles, kilometers)|`varchar(10)`|❌||
+|`estimated_payload`|Estimated payload weight|`decimal(10,2)`|❌||
+|`payload_unit`|Unit of payload weight (e.g., pounds, kilograms)|`varchar(10)`|❌||
 |&nbsp;|
 |`created_at`|Timestamp when the record was created.|`timestamp`|❌|`current_timestamp`|
 |`created_by`|ID of the user who created the record.|`integer`|❌|-1|
@@ -45,6 +49,8 @@ The `load` table contains information about a load being transported by the comp
 |[`load_stop`](./load-stop-table.md)|One is to Many|
 |[`broker`](./broker-table.md)|Many is to One|
 |[`load_broker_contact`](./broker-contact-table.md)|One is to Many|
+|[`invoice`](./invoice-table.md)|One is to One|
+
 
 
 <span style="font-size:10px">\* Relational directions mentioned in the table above are from the current table to other table</span>
