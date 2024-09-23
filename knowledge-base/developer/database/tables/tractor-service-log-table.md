@@ -66,7 +66,6 @@ The `tractor_service_log` table is used to record and track the maintenance and 
 |[`tractor`](./tractor-table.md)|Many is to one|
 |[`service_center`](./service-center-table.md)|Many is to one|
 |[`service_center_contact`](./service-center-contact-table.md)|Many is to one|
-
-
+|[`tractor_service_log_file`](./tractor-service-log-file-table.md)|One is to many|
 
 <span style="font-size:10px">\* Relational directions mentioned in the table above are from the current table to other table</span>
