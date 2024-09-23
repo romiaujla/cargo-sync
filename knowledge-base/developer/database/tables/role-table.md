@@ -20,6 +20,20 @@ Represents the Role table in the database. The Role table is used to store infor
 |`deleted_at`|Timestamp when the record was deleted.|`timestamp`|✓|`null`|
 |`deleted_by`|ID of the user who deleted the record.|`integer`|✓|`null`|
 
+## Enums
+
+### `role_name`
+
+|Value|Description|
+|-|-|
+|`Admin`|Administrator role with full access|
+|`Dispatcher`|Dispatcher role with access to manage dispatch operations|
+|`Driver`|Driver role with access to manage their own deliveries|
+|`Co-Driver`|Co-Driver role with access to assist drivers|
+|`Safety Manager`|Safety Manager role with access to manage safety protocols|
+|`Mechanic`|Mechanic role with access to manage vehicle maintenance|
+
+
 ## Constraints
 
 |Constraint Name|Type|Description|Column(s)|

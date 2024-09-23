@@ -25,6 +25,8 @@ Represents a `user` in the system. The `user` table stores all the information r
 |`state`|User's state|`varchar(50)`|✓||
 |`zip`|User's zip code|`varchar(10)`|✓||
 |`country`|User's country|`varchar(100)`|✓||
+|`status`|User current status|`varchar(50)`|❌|`Available`|
+|`is_active`|Is the user still active|`boolean`|❌|`true`|
 |&nbsp;|
 |`created_at`|Timestamp when the record was created.|`timestamp`|❌|`current_timestamp`|
 |`created_by`|ID of the user who created the record.|`integer`|❌|-1|
@@ -32,6 +34,17 @@ Represents a `user` in the system. The `user` table stores all the information r
 |`updated_by`|ID of the user who last updated the record.|`integer`|❌|-1|
 |`deleted_at`|Timestamp when the record was deleted.|`timestamp`|✓|`null`|
 |`deleted_by`|ID of the user who deleted the record.|`integer`|✓|`null`|
+
+## Enums
+
+### `status`
+
+|Value|Description|
+|-|-|
+|`Available`|The user is available and active.|
+|`Busy`|The user is currently busy.|
+|`Off`|The user is off and not available.|
+|`Away`|The user is away and not available.|
 
 ## Constraints
 
@@ -56,6 +69,7 @@ Represents a `user` in the system. The `user` table stores all the information r
 |-|-|
 |[`user_note`](./user-note-table.md)|One is to many|
 |[`user_role`](./user-role-table.md)|Many to many|
+|[`load_log`](./load-log-table.md)|One is to many|
 
 
 <span style="font-size:10px">\* Relational directions mentioned in the table above are from the current table to other table</span>
