@@ -37,6 +37,8 @@ This document provides detailed information about the tables and columns in the 
 |[`user_note`](./tables/user-note-table.md.md)|A junction table that establishes a many-to-many relationship between users and notes
 |[`user_role`](./tables/user-role-table.md)|A junction table that establishes a many-to-many relationship between users and roles|
 |[`user`](./tables/user-table.md)|A table that holds user information|
+|[`tractor_service_log_file`](./tables/tractor-service-log-file-table.md)|A table that holds tractor service log file information|
+|[`trailer_service_log_file`](./tables/trailer-service-log-file-table.md)|A table that holds trailer service log file information|
 
 
 ## Future additions

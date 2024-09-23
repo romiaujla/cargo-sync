@@ -78,7 +78,11 @@ The `file` table stores metadata about various files associated with loads, comp
 
 |Table Name|Relation*|
 |-|-|
-|None|
+|[`trailer_service_log_file`](./trailer-service-log-file-table.md)|One is to One|
+|[`tractor_service_log_file`](./tractor-service-log-file-table.md)|One is to One|
+|[`tractor_file`](./tractor-file-table.md)|One is to One|
+|[`trailer_file`](./trailer-file-table.md)|One is to One|
+
 
 
 <span style="font-size:10px">\* Relational directions mentioned in the table above are from the current table to other table</span>
